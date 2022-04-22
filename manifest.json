@@ -1,0 +1,18 @@
+{
+  "name": "101weiqiLocalizer",
+  "description": "Localize 101weiqi.com pages to English",
+  "version": "0.0.4.2",
+  "author": "Marcel Gruenauer",
+
+  "content_scripts": [{
+    "matches": ["*://*.101weiqi.com/*"],
+    "all_frames": true,
+    "run_at":"document_end",
+    "js": ["start.js"]
+  }],
+  "web_accessible_resources": ["content.js"],
+  "icons": {
+    "128": "icon-stone-128.png"
+  },
+  "manifest_version": 2
+}
