@@ -1,6 +1,3 @@
-// FIXME:
-// https://www.101weiqi.com/chessbook/playerlist/
-
 // Keep the entries sorted. Put the longest entries first because we iterate
 // over them in this order. And we want, for example, '職業四段' to be
 // translated as '4p', not as '職業四dan'.
@@ -46,8 +43,10 @@ const textReplacements = {
     '创建新作业模板': 'Create a new job template',
     '围棋知识点专辑': 'Categories album',
     '李昌镐官子技巧': "Lee Chang-ho's Endgame Skills",
+    '问道解惑讨论区': 'Discussion Forum',
     '基礎から始める 河野臨の詰碁': "Kono Rin's tsumego starting from the basics",
     '围棋死活辞典-濑越宪作': 'Life-and-Death Dictionary (Segoe Kensaku)',
+    '围棋教室/棋社动态': 'News',
     '属于变化答案': 'is a variation answer',
     '属于失败答案': 'is a failure answer',
     '属于正解答案': 'is a correct answer',
@@ -85,6 +84,9 @@ const textReplacements = {
     '平均做题时间': 'Average problem time',
     '所有编辑记录': 'All edit records',
     '大师的下一手': "Master's next move",
+    '棋友证书列表': 'Certificate list',
+    '悬赏题目分享': 'Bounty topic',
+    '101棋友最近活动': '101weiqi friends recent activity',
     '不限制时间': 'unlimited time',
     '山田规三生': 'Yamada Kimio',
     '作业本名称': 'Workbook name',
@@ -111,6 +113,8 @@ const textReplacements = {
     '可立即落子': 'Can be placed immediately', // FIXME
     '大眼杀小眼': 'Big eye kills small eye',
     '今日排行榜': "Today's Leaderboard",
+    '高权限棋友': 'Power users',
+    '101棋谱库研究': 'Repository research',
     '围棋死活1000题': 'Weiqi Life-and-Death 1000 Problems',
     '围棋考试/挑战赛': 'Go exam/challenge',
     '围棋闯关-棋力测试': 'Go Strength Test',  // guan
@@ -258,6 +262,11 @@ const textReplacements = {
     '一二妙手': '1-2 point',
     '一一妙手': '1-1 point',
     '龟不出头': "Crane's nest",
+    '查找棋友': 'Find friends',
+    '今日抢答': 'Answer today',
+    '围棋裁判': 'Go referee',
+    '吃子方向': 'Capture direction',
+    '邮箱/用户名': 'email / username',
     '还没有101帐号': "Don't have a 101 account yet",
     '不限制': 'unlimited',
     '待审核': 'pending review',
@@ -502,7 +511,7 @@ const textReplacements = {
     '关闭': 'Close',    // a form
     '崔精': 'Choi Jeong',
     '张栩': 'Cho U',
-    '围棋': 'China',
+    '围棋': 'Go',
     '陈贤': 'Chen Xian',
     '陳禧': 'Chen Xi',
     '关卡': 'Checkpoint',
@@ -525,6 +534,12 @@ const textReplacements = {
     '应对': 'Answer',
     '高级': 'Advanced',
     '添加': 'Add',
+    '记谱': 'Notation',
+    '棋友': 'Users',
+    '整形': 'Shape',
+    '切断': 'Cut',
+    '擂台': 'Arena',
+    '密码': 'password',
     '秒': 'sec',
     '对': 'right',
     '错': 'mistaken',
@@ -563,15 +578,24 @@ let re_every_n_days = /每(\d+)天一次/;
 // I translated 知识点 as 'category' (lit. 'knowledge point')
 
 const imageReplacements = {
-    // I used Preview.app to write the text (color: Red 81, Green 109, Blue 149; font: Arial Narrow 32pt)
-    'https://static2.101weiqi.com/static/images/home/home1.png': 'http://gogamespace.com/custom/101weiqi/home1.png',
-    'https://static2.101weiqi.com/static/images/home/home2.png': 'http://gogamespace.com/custom/101weiqi/home2.png',
+    'https://static2.101weiqi.com/static/images/home/home1.png': 'http://baniverso.com/101weiqiLocalizer/img/home1.png',
+    'https://static2.101weiqi.com/static/images/home/home2.png': 'http://baniverso.com/101weiqiLocalizer/img/home2.png',
+    'https://static2.101weiqi.com/static/images/home/home3.png': 'http://baniverso.com/101weiqiLocalizer/img/home3.png',
+    'https://static2.101weiqi.com/static/images/home/home4.png': 'http://baniverso.com/101weiqiLocalizer/img/home4.png',
+    'https://static2.101weiqi.com/static/images/home/home5.png': 'http://baniverso.com/101weiqiLocalizer/img/home5.png',
+    'https://static2.101weiqi.com/static/images/home/home6.png': 'http://baniverso.com/101weiqiLocalizer/img/home6.png',
+    'https://static2.101weiqi.com/static/images/home/home10.png': 'http://baniverso.com/101weiqiLocalizer/img/home10.png',
+    'https://static2.101weiqi.com/static/images/home/home12.png': 'http://baniverso.com/101weiqiLocalizer/img/home12.png',
+    'https://static2.101weiqi.com/static/images/home/home20.png': 'http://baniverso.com/101weiqiLocalizer/img/home20.png',
+    'https://static2.101weiqi.com/static/images/home/home21.png': 'http://baniverso.com/101weiqiLocalizer/img/home21.png',
+    'https://static2.101weiqi.com/static/images/home/home88.png': 'http://baniverso.com/101weiqiLocalizer/img/home88.png',
+    'https://static2.101weiqi.com/static/images/home/home100.png': 'http://baniverso.com/101weiqiLocalizer/img/home100.png',
 }
 
 // addStyles()
 recursiveReplace(document.body)
 replaceAttributes()
-// replaceImageSources(document.body)
+replaceImageSources(document.body)
 
 let observer = new MutationObserver(mutationRecords => {
     mutationRecords.forEach(m => {

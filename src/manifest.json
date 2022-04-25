@@ -1,7 +1,7 @@
 {
   "name": "101weiqiLocalizer",
   "description": "Localize 101weiqi.com pages to English",
-  "version": "0.0.4.2",
+  "version": "0.0.5",
   "author": "Marcel Gruenauer",
 
   "content_scripts": [{
