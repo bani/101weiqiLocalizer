@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+Source code for the [101weiqiLocalizer Firefox Add-On](https://addons.mozilla.org/en-CA/firefox/addon/101weiqilocalizer/)
 
-You can use the [editor on GitHub](https://github.com/bani/101weiqiLocalizer/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[101weiqi.com](https://www.101weiqi.com/) is a Chinese-language web site where you can solve problems for the Go / Weiqi / Baduk board game. Unfortunately, there is no English-language localization of that website. This add-on aims to make it easier for those of us who don't read Chinese to use that site, by adding a script to 101weiqi.com's web pages which translates strings to English. It does not alter the functionality of 101weiqi.com in any way.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This add-on was initially developed as a Chrome extension, and it's available here with permission from the author, who also licenced it as open source with the MIT license. The original GitHub repository is no longer available.
 
-### Markdown
+## Translations
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Additional translations are welcome. Please create an [issue](https://github.com/bani/101weiqiLocalizer/issues) with the original term in plain text and the correct translation. If it's part of a longer phrase, please include the whole phrase.
 
-```markdown
-Syntax highlighted code block
+## Development
 
-# Header 1
-## Header 2
-### Header 3
+See [Getting started with web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/) to learn how to test and package an extension.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+The following commands are particularly useful:
 ```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bani/101weiqiLocalizer/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+web-ext lint
+web-ext run
+web-ext build
+```
