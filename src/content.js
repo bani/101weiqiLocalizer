@@ -616,7 +616,7 @@ const textReplacements = {
     '扳': 'Hane',
     '夹': 'Clamp',
     '枷': 'Net',
-    '挤': 'Squeeke / Atekomi',
+    '挤': 'Atekomi / angle wedge',
     '双': 'Bamboo joint',
     '跨': 'Cut across',
     '渡': 'Connect underneath',
