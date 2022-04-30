@@ -11,6 +11,8 @@ This add-on was initially developed as a Chrome extension, and it's distributed 
 
 Additional translations, or improvements for the current ones, are welcome. Please create an [issue](https://github.com/bani/101weiqiLocalizer/issues) with the original term in plain text and the correct translation. If it's part of a longer phrase, please include the whole phrase. If it's already partially translated, disable the add-on in order to get the full phrase.
 
+There is also a [spreadsheet with all translations](https://docs.google.com/spreadsheets/d/1VGGhi-gUZ8tYWNyDaZnRfguxABbh1GESVkJT2pE-PP0/edit?usp=sharing) available where you can leave comments, but please notify me if you leave a comment or I won't see it.
+
 ### Development
 
 See [Getting started with web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/) to learn how to test and package an extension.
