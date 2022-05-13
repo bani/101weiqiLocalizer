@@ -4,9 +4,11 @@
 
 const textReplacements = {
     '每道题目的做题次数，达到这个次数没有做对则判错': 'The number of attemps for each problem. If this number is reached, it will be judged wrong.',
+    '高手！我对你的景仰犹如滔滔江水，连绵不绝': 'Master! My admiration for you is like a surging river, endless',
     '此邮箱将接受激活邮件完成账号激活流程': 'This email address will receive an activation email to complete the account activation process',
     '不选择，则依靠棋友当前级别自动筛选': 'If you don’t choose, it will be automatically selected based on the current player level',
     '你的用户名和密码不符，请再试一次': 'Your username and password do not match; please try again',
+    '入相信你不是答错，只是手滑了对吧': 'I believe that you did not answer wrong, but your hand slipped, right',
     '如果超过时间未做完，则本题判错': 'If the time is exceeded, the problem will be judged wrong.',
     '基礎から始める 河野臨の詰碁': 'Kono Rin’s tsumego starting from the basics',
     '本题为选择题，请选择一个选项': 'This question is multiple choice, please select one option',
@@ -24,6 +26,7 @@ const textReplacements = {
     '设置每道题目的做题次数': 'Set the number of opportunities for each problem',
     '设置每道题目的做题时间': 'Set the time limit for each problem',
     '银冈棋院官子手筋习题集': 'Yingang Go Academy Endgame Tesuji Problems',
+    '帅！答对了这么难的题目': 'Beautiful! Answering such a difficult question correctly',
     '我的本月错题统计分析': 'Stats of my mistakes this month',
     '我的年度错题统计分析': 'Stats of my mistakes this year',
     '打印功能只对会员开放': 'The printing function is only available to members',
