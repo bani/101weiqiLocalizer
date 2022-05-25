@@ -116,6 +116,7 @@ const textReplacements = {
     '棋形题目搜索': 'Shape search',
     '围棋手筋辞典': 'Tesuji Dictionary',
     '题目名称搜索': 'Title search',
+    '黑先最佳着手': 'Black to play best move',
     '在101工作': 'Work at 101',
     'Zero棋谱': 'ZeroGo',
     '抱吃和包吃': 'Atari and capture',
@@ -443,6 +444,7 @@ const textReplacements = {
     '结城聪': 'Yuki Satoshi',
     '周鹤洋': 'Zhou Heyang',
     '周睿羊': 'Zhou Ruiyang',
+    '完成': 'finished',
     '第十': '10th',
     '第一': '1st',
     '第二': '2nd',
@@ -626,6 +628,7 @@ const textReplacements = {
     '白先': 'White to play',
     '谢赫': 'Xie He',
     '张立': 'Zhang Li',
+    '失败': 'fail',
     '挤': 'Atekomi / angle wedge',
     '碰': 'Attach',
     '双': 'Bamboo joint',
@@ -659,6 +662,7 @@ const textReplacements = {
     '托': 'Underneath attachment',
     '挖': 'Wedge',
     '白': 'White',
+    '活': 'life',
 }
 
 // cache regular expressions
