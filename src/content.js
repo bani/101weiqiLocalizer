@@ -4,8 +4,10 @@
 
 const textReplacements = {
     '每道题目的做题次数，达到这个次数没有做对则判错': 'The number of attemps for each problem. If this number is reached, it will be judged wrong.',
+    '黑先，利用先手救回带三角黑棋。提示: 第1步，找到先手。': 'Black to play, using the first move to save marked stones. Hint: Step 1, find the first move.',
     '高手！我对你的景仰犹如滔滔江水，连绵不绝': 'Master! My admiration for you is like a surging river, endless',
     '此邮箱将接受激活邮件完成账号激活流程': 'This email address will receive an activation email to complete the account activation process',
+    '在选点中选择最佳的建立根据的安定下法': 'Choose the best base stabilization method among the selection points',
     '不选择，则依靠棋友当前级别自动筛选': 'If you don’t choose, it will be automatically selected based on the current player level',
     '你的用户名和密码不符，请再试一次': 'Your username and password do not match; please try again',
     '入相信你不是答错，只是手滑了对吧': 'I believe that you did not answer wrong, but your hand slipped, right',
@@ -129,6 +131,7 @@ const textReplacements = {
     '有眼杀无眼': 'Eye/no eye',
     '藤泽库之助': 'Fujisawa Hosai',
     '布局猜子题': 'Guess opening moves',
+    '请断开白棋': 'Disconnect white',
     '桥本宇太郎': 'Hashimoto Utaro',
     '棋魂之棋谱': 'Hikaru No Go',
     '中盘作战题': 'Middle game problems',
@@ -158,6 +161,7 @@ const textReplacements = {
     '微信公众号': 'WeChat public account',
     '作业本名称': 'Workbook name',
     '山田规三生': 'Yamada Kimio',
+    '救回带三角': 'Save triangle',
     '一一妙手': '1-1 point',
     '一二妙手': '1-2 point',
     '三三定式': '3-3 point joseki',
@@ -314,6 +318,7 @@ const textReplacements = {
     '安井算知': 'Yasui Sanchi',
     '依田纪基': 'Yoda Norimoto',
     '涛哥十佳': 'Yu Qingquan top 10',
+    '寻找根据': 'Find base',
     '第十一': '11th',
     '第十二': '12th',
     '第十三': '13th',
@@ -629,6 +634,9 @@ const textReplacements = {
     '谢赫': 'Xie He',
     '张立': 'Zhang Li',
     '失败': 'fail',
+    '正解': 'correct',
+    '的方向': 'direction',
+    '净杀': 'net kill',
     '挤': 'Atekomi / angle wedge',
     '碰': 'Attach',
     '双': 'Bamboo joint',
@@ -663,6 +671,7 @@ const textReplacements = {
     '挖': 'Wedge',
     '白': 'White',
     '活': 'life',
+    '胜': 'win',
 }
 
 // cache regular expressions
