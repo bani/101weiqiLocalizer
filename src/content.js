@@ -5,6 +5,7 @@
 const textReplacements = {
     '每道题目的做题次数，达到这个次数没有做对则判错': 'The number of attemps for each problem. If this number is reached, it will be judged wrong.',
     '黑先，利用先手救回带三角黑棋。提示: 第1步，找到先手。': 'Black to play, using the first move to save marked stones. Hint: Step 1, find the first move.',
+    '角上和边线上的棋子在出头时常用的手段你都学会了么': 'Have you learned the common tactics used on the corners and sides',
     '高手！我对你的景仰犹如滔滔江水，连绵不绝': 'Master! My admiration for you is like a surging river, endless',
     '此邮箱将接受激活邮件完成账号激活流程': 'This email address will receive an activation email to complete the account activation process',
     '在选点中选择最佳的建立根据的安定下法': 'Choose the best base stabilization method among the selection points',
@@ -12,6 +13,7 @@ const textReplacements = {
     '你的用户名和密码不符，请再试一次': 'Your username and password do not match; please try again',
     '入相信你不是答错，只是手滑了对吧': 'I believe that you did not answer wrong, but your hand slipped, right',
     '如果超过时间未做完，则本题判错': 'If the time is exceeded, the problem will be judged wrong.',
+    '黑先，白三角是错着，请黑棋下出正确的应对。': 'Black to play, the white triangle was a mistake, please make the correct response.',
     '基礎から始める 河野臨の詰碁': 'Kono Rin’s tsumego starting from the basics',
     '本题为选择题，请选择一个选项': 'This question is multiple choice, please select one option',
     '单位为天，每多少天一次作业': 'How often to run the job, in days',
@@ -126,6 +128,7 @@ const textReplacements = {
     '可立即落子': 'Can be placed immediately',
     '中国流布局': 'Chinese opening',
     '按难度选择': 'Choose by difficulty',
+    '请救活黑棋': 'Please save black',
     '正 确 率': 'Correct rate',
     '人生十八局': 'Eighteen rounds of life',
     '有眼杀无眼': 'Eye/no eye',
@@ -162,6 +165,7 @@ const textReplacements = {
     '作业本名称': 'Workbook name',
     '山田规三生': 'Yamada Kimio',
     '救回带三角': 'Save triangle',
+    '恭喜答对': 'Congratulations',
     '一一妙手': '1-1 point',
     '一二妙手': '1-2 point',
     '三三定式': '3-3 point joseki',
@@ -319,6 +323,7 @@ const textReplacements = {
     '依田纪基': 'Yoda Norimoto',
     '涛哥十佳': 'Yu Qingquan top 10',
     '寻找根据': 'Find base',
+    '请吃白棋': 'Capture white',
     '第十一': '11th',
     '第十二': '12th',
     '第十三': '13th',
@@ -449,6 +454,7 @@ const textReplacements = {
     '结城聪': 'Yuki Satoshi',
     '周鹤洋': 'Zhou Heyang',
     '周睿羊': 'Zhou Ruiyang',
+    '选择选': 'choose',
     '完成': 'finished',
     '第十': '10th',
     '第一': '1st',
@@ -635,6 +641,7 @@ const textReplacements = {
     '张立': 'Zhang Li',
     '失败': 'fail',
     '正解': 'correct',
+    '被吃': 'captured',
     '的方向': 'direction',
     '净杀': 'net kill',
     '挤': 'Atekomi / angle wedge',
@@ -672,6 +679,7 @@ const textReplacements = {
     '白': 'White',
     '活': 'life',
     '胜': 'win',
+    '答': 'answer',
 }
 
 // cache regular expressions
