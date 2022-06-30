@@ -5,7 +5,7 @@ Source code for the [101weiqiLocalizer Firefox Add-On](https://addons.mozilla.or
 
 [101weiqi.com](https://www.101weiqi.com/) is a Chinese web site where you can solve problems for the Go / Weiqi / Baduk board game. This add-on aims to make it easier for those of us who don't read Chinese to use that site, by adding a script to 101weiqi.com's pages that replaces a list of common words with the English translation. It does not alter the functionality of 101weiqi.com in any way.
 
-This add-on was initially developed as a Chrome extension, and it's distributed here with permission from the author, Marcel Grünauer. The original code [is no longer available](https://github.com/MarcelGruenauer/101weiqiLocalizer).
+This add-on was initially developed as a Chrome extension, and it's distributed here with permission from the author, Marcel Grünauer. The original code is [here](https://github.com/MarcelGruenauer2/101weiqiLocalizer).
 
 ### Translations
 
