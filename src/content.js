@@ -30,6 +30,7 @@ const textReplacements = {
     "请找出此局面下的最佳一手": "Please find the best move in this situation",
     "请直接用鼠标在棋盘上落子": "Use the mouse to play stones",
     "帅！答对了这么难的题目": "Beautiful! Answering such a difficult question correctly",
+    "棋怎样走才能有效地连接": "How does Black move to connect effectively",
     "101本月错题统计分析": "Community error report this month",
     "101年度错题统计分析": "Community mistakes report",
     "创建一个围棋教室/棋社": "Create a Go classroom/club",
@@ -72,6 +73,7 @@ const textReplacements = {
     "101棋谱库研究": "Repository research",
     "设置比赛计时范围": "Set the game time range",
     "系统自动生成作业": "The system automatically generates homework",
+    "应该采取本图下法": "The following method should be adopted",
     "请挡住白棋的出头": "block white's move",
     "围棋知识点专辑": "Categories list",
     "长时间包干比赛": "Correspondence game",
@@ -370,6 +372,8 @@ const textReplacements = {
     "安井算知": "Yasui Sanchi",
     "依田纪基": "Yoda Norimoto",
     "涛哥十佳": "Yu Qingquan top 10",
+    "加入时间": "Join time",
+    "请吃△子": "Capture △",
     "第十一": "11th",
     "11路": "11x11",
     "第十二": "12th",
@@ -726,6 +730,8 @@ const textReplacements = {
     "如何": "How to",
     "打入": "Invade",
     "打吃": "Capture",
+    "定形": "fix form",
+    "请选": "please choose",
     "挤": "Atekomi / angle wedge",
     "碰": "Attach",
     "双": "Bamboo joint",
@@ -764,6 +770,8 @@ const textReplacements = {
     "挖": "Wedge",
     "白": "White",
     "胜": "win",
+    "杀": "kill",
+    "答": "answer",
 }
 
 // cache regular expressions
