@@ -1,8 +1,8 @@
 {
   "name": "101weiqiLocalizer",
   "description": "Localize 101weiqi.com pages to English",
-  "version": "0.0.5.9",
-  "author": "Marcel Gruenauer",
+  "version": "0.0.6.1",
+  "author": "Marcel Gruenauer and Vanessa Sabino",
 
   "content_scripts": [{
     "matches": ["*://*.101weiqi.com/*"],
@@ -14,5 +14,11 @@
   "icons": {
     "128": "icon-stone-128.png"
   },
+
+  "browser_specific_settings": {
+    "gecko": {},
+    "gecko_android": {}
+  },
+  
   "manifest_version": 2
 }
