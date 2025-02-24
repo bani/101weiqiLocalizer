@@ -2008,6 +2008,9 @@ let observer = new MutationObserver(mutationRecords => {
                 case "title":
                     m.target.title = replaceInString(m.target.title)
                     break;
+                case "placeholder":
+                    m.target.placeholder = replaceInString(m.target.placeholder)
+                    break;
             }
 
             observe()
