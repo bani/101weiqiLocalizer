@@ -1980,8 +1980,10 @@ const imageReplacements = {
     'https://static2.101weiqi.com/static/images/home/home12.png': 'http://baniverso.com/101weiqiLocalizer/img/home12.png',
     'https://static2.101weiqi.com/static/images/home/home20.png': 'http://baniverso.com/101weiqiLocalizer/img/home20.png',
     'https://static2.101weiqi.com/static/images/home/home21.png': 'http://baniverso.com/101weiqiLocalizer/img/home21.png',
+    'https://static2.101weiqi.com/static/images/home/home32.png': 'http://baniverso.com/101weiqiLocalizer/img/home32.png',
     'https://static2.101weiqi.com/static/images/home/home88.png': 'http://baniverso.com/101weiqiLocalizer/img/home88.png',
     'https://static2.101weiqi.com/static/images/home/home100.png': 'http://baniverso.com/101weiqiLocalizer/img/home100.png',
+    'https://static2.101weiqi.com/static/images/home/homeclock.png': 'http://baniverso.com/101weiqiLocalizer/img/homeclock.png',
 }
 
 recursiveReplace(document.body)
