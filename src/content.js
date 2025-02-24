@@ -2071,6 +2071,9 @@ function replaceAttributes() {
     document.querySelectorAll('[title]').forEach((el) => {
         el.title = replaceInString(el.title)
     })
+    document.querySelectorAll('[placeholder]').forEach((el) => {
+        el.placeholder = replaceInString(el.placeholder)
+    })
 }
 
 function replaceImageSources(node) {
