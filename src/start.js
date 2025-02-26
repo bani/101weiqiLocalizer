@@ -4,9 +4,18 @@
  * our script to the end of the HTML document.
 */
 
+// Provide the main script with the resources URL within the extention package
+var resourcesScript = document.createElement('script');
+resourcesScript.innerText = `const ext101WeiqiImagesURL="${browser.runtime.getURL("images")}"`;
+appendScript(resourcesScript);
+
 var s = document.createElement('script');
 s.src = browser.runtime.getURL('content.js');
-s.onload = function() {
-  this.remove();
-};
-(document.head || document.documentElement).appendChild(s);
+appendScript(s)
+
+function appendScript(script) {
+    script.onload = function() {
+        this.remove();
+    };
+    (document.head || document.documentElement).appendChild(script);
+}
