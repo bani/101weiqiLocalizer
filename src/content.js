@@ -1984,6 +1984,9 @@ const imageReplacements = {
     'https://static2.101weiqi.com/static/images/home/home100.png': 'http://baniverso.com/101weiqiLocalizer/img/home100.png',
 }
 
+const localizableAttributes = [ "label", "title", "placeholder" ];
+const localizableSelectors = localizableAttributes.map((a) => `[${a}]`)
+
 recursiveReplace(document.body)
 replaceAttributes()
 replaceImageSources(document.body)
@@ -2000,19 +2003,9 @@ let observer = new MutationObserver(mutationRecords => {
             observe()
         } else if (m.type == 'attributes') {
             observer.disconnect()    // avoid infinite loops
-
-            switch(m.attributeName) {
-                case "label":
-                    m.target.label = replaceInString(m.target.label)
-                    break;
-                case "title":
-                    m.target.title = replaceInString(m.target.title)
-                    break;
-                case "placeholder":
-                    m.target.placeholder = replaceInString(m.target.placeholder)
-                    break;
+            if (localizableAttributes.indexOf(m.attributeName) >= 0) {
+                m.target[m.attributeName] = replaceInString(m.target[m.attributeName])
             }
-
             observe()
         }
     })
@@ -2023,7 +2016,7 @@ const observe = () => {
         characterData: true,
         childList: true,
         subtree: true,
-        attributeFilter: [ "label", "title" ],
+        attributeFilter: localizableAttributes,
     });
 }
 
@@ -2068,15 +2061,13 @@ function replaceInString(s) {
 }
 
 function replaceAttributes() {
-    document.querySelectorAll('[label]').forEach((el) => {
-        el.label = replaceInString(el.label)
-    })
-    document.querySelectorAll('[title]').forEach((el) => {
-        el.title = replaceInString(el.title)
-    })
-    document.querySelectorAll('[placeholder]').forEach((el) => {
-        el.placeholder = replaceInString(el.placeholder)
-    })
+    for (let i = 0; i < localizableSelectors.length; i++) {
+        const attribute = localizableAttributes[i];
+        const selector = localizableSelectors[i];
+        document.querySelectorAll(selector).forEach((el) => {
+            el[attribute] = replaceInString(el[attribute])
+        });
+    }
 }
 
 function replaceImageSources(node) {
