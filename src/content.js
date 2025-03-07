@@ -1969,20 +1969,23 @@ let re_mistakes_made = /在(\d+)道题目中出错/;
 let re_every_n_days = /每(\d+)天一次/;
 let re_chapter = /第(\d+)章/;
 
-const imageReplacements = {
-    'https://static2.101weiqi.com/static/images/home/home1.png': 'http://baniverso.com/101weiqiLocalizer/img/home1.png',
-    'https://static2.101weiqi.com/static/images/home/home2.png': 'http://baniverso.com/101weiqiLocalizer/img/home2.png',
-    'https://static2.101weiqi.com/static/images/home/home3.png': 'http://baniverso.com/101weiqiLocalizer/img/home3.png',
-    'https://static2.101weiqi.com/static/images/home/home4.png': 'http://baniverso.com/101weiqiLocalizer/img/home4.png',
-    'https://static2.101weiqi.com/static/images/home/home5.png': 'http://baniverso.com/101weiqiLocalizer/img/home5.png',
-    'https://static2.101weiqi.com/static/images/home/home6.png': 'http://baniverso.com/101weiqiLocalizer/img/home6.png',
-    'https://static2.101weiqi.com/static/images/home/home10.png': 'http://baniverso.com/101weiqiLocalizer/img/home10.png',
-    'https://static2.101weiqi.com/static/images/home/home12.png': 'http://baniverso.com/101weiqiLocalizer/img/home12.png',
-    'https://static2.101weiqi.com/static/images/home/home20.png': 'http://baniverso.com/101weiqiLocalizer/img/home20.png',
-    'https://static2.101weiqi.com/static/images/home/home21.png': 'http://baniverso.com/101weiqiLocalizer/img/home21.png',
-    'https://static2.101weiqi.com/static/images/home/home88.png': 'http://baniverso.com/101weiqiLocalizer/img/home88.png',
-    'https://static2.101weiqi.com/static/images/home/home100.png': 'http://baniverso.com/101weiqiLocalizer/img/home100.png',
-}
+const originalImagesURL = 'https://static2.101weiqi.com/static/images/';
+const imageReplacements = [
+  'home/home1.png',
+  'home/home2.png',
+  'home/home3.png',
+  'home/home4.png',
+  'home/home5.png',
+  'home/home6.png',
+  'home/home10.png',
+  'home/home12.png',
+  'home/home20.png',
+  'home/home21.png',
+  'home/home32.png',
+  'home/home88.png',
+  'home/home100.png',
+  'home/homeclock.png',
+];
 
 const localizableAttributes = [ "label", "title", "placeholder" ];
 const localizableSelectors = localizableAttributes.map((a) => `[${a}]`)
@@ -2071,9 +2074,13 @@ function replaceAttributes() {
 }
 
 function replaceImageSources(node) {
+    const extensionRootURL = ext101WeiqiImagesURL + '/';
     node.querySelectorAll('img').forEach(img => {
-        for (const [key, value] of Object.entries(imageReplacements)) {
-            img.src = img.src.replace(key, value)
+        if (img.src.startsWith(originalImagesURL)) {
+            const imgPath = img.src.substring(originalImagesURL.length);
+            if (imageReplacements.indexOf(imgPath) >= 0) {
+                img.src = extensionRootURL + imgPath;
+            }
         }
     })
 }

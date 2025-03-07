@@ -10,7 +10,10 @@
     "run_at":"document_end",
     "js": ["start.js"]
   }],
-  "web_accessible_resources": ["content.js"],
+  "web_accessible_resources": [
+    "content.js",
+    "images/**.png"
+  ],
   "icons": {
     "128": "icon-stone-128.png"
   },
@@ -19,6 +22,6 @@
     "gecko": {},
     "gecko_android": {}
   },
-  
+
   "manifest_version": 2
 }
