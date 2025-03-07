@@ -1,7 +1,7 @@
 {
   "name": "101weiqiLocalizer",
   "description": "Localize 101weiqi.com pages to English",
-  "version": "0.0.6.1",
+  "version": "0.0.7",
   "author": "Marcel Gruenauer and Vanessa Sabino",
 
   "content_scripts": [{
