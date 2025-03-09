@@ -91,7 +91,6 @@ const ext101WeiqiLocalizers = {
             '金角银边草肚皮' : 'Corner is gold, side is silver, center is grass',
             '瞄准对方的弱点' : 'Target the opponent’s weakness',
             '生成一份新作业' : 'Generate a new assignment',
-            '棋 力 测 试' : 'Go Strength Test',
             '李昌镐官子技巧' : 'Lee Chang-ho’s Endgame Skills',
             '本题超时未通过' : 'Problem failed by timeout',
             '按难度顺序选题' : 'in order of difficulty',
@@ -2026,6 +2025,19 @@ const ext101WeiqiLocalizers = {
             'home/homeclock.png',
         ]
     },
+    '/guan': {
+        texts: {
+          '棋 力 测 试' : 'Strength Test',
+          '显示我的记录' : 'My statistics',
+          '通过率' : 'Pass rate',
+          '最高' : 'Best'
+        },
+        regExps: [],
+        images: [
+          'guan2/training2.png',
+          'guan2/tt2.png',
+        ]
+    }
 }
 
 const originalImagesURL = 'https://static2.101weiqi.com/static/images/';
