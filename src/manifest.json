@@ -12,6 +12,7 @@
   }],
   "web_accessible_resources": [
     "content.js",
+    "localizers.js",
     "images/**.png"
   ],
   "icons": {
