@@ -7,9 +7,7 @@ const localizableAttributes = [ 'label', 'title', 'placeholder' ];
 const localizableSelectors = localizableAttributes.map((a) => `[${a}]`)
 
 const pageLocalizers = findPageLocalizers();
-
 locAll(recursiveReplace, document.body)
-locAll(replaceAttributes)
 locAll(replaceImageSources, document.body)
 
 let observer = new MutationObserver(mutationRecords => {
@@ -50,6 +48,7 @@ function recursiveReplace(loc, node) {
     if (node.nodeType == 3 && node.nodeName != 'SCRIPT') {
         node.nodeValue = replaceInString(loc, node.nodeValue)
     } else if (node.nodeType == 1 && node.nodeName != 'SCRIPT' && node.nodeName != 'STYLE') {
+        replaceAttributes(loc, node)
         var child = node.firstChild;
         while (child) {
         	  recursiveReplace(loc, child);
@@ -71,13 +70,15 @@ function replaceInString(loc, s) {
     return s
 }
 
-function replaceAttributes(loc) {
-    for (let i = 0; i < localizableSelectors.length; i++) {
-        const attribute = localizableAttributes[i];
-        const selector = localizableSelectors[i];
-        document.querySelectorAll(selector).forEach((el) => {
-            el[attribute] = replaceInString(loc, el[attribute])
-        });
+function replaceAttributes(loc, node) {
+    if (!node.getAttribute) {
+        return;
+    }
+    for (const attr of localizableAttributes) {
+        const attrValue = node.getAttribute(attr);
+        if (attrValue) {
+            node.setAttribute(attr, replaceInString(loc, attrValue));
+        }
     }
 }
 
