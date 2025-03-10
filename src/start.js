@@ -4,18 +4,25 @@
  * our script to the end of the HTML document.
 */
 
-// Provide the main script with the resources URL within the extention package
-var resourcesScript = document.createElement('script');
-resourcesScript.innerText = `const ext101WeiqiImagesURL="${browser.runtime.getURL("images")}"`;
-appendScript(resourcesScript);
+appendScriptText(`const ext101WeiqiImagesURL="${browser.runtime.getURL('images')}"`)
+    .then(() => appendScriptFile('localizers.js'))
+    .then(() => appendScriptFile('content.js'));
 
-var s = document.createElement('script');
-s.src = browser.runtime.getURL('content.js');
-appendScript(s)
-
-function appendScript(script) {
-    script.onload = function() {
-        this.remove();
-    };
+function appendScriptText(text) {
+    var script = document.createElement('script');
+    script.innerText = text;
     (document.head || document.documentElement).appendChild(script);
+    return Promise.resolve();
+}
+
+function appendScriptFile(file) {
+    var script = document.createElement('script');
+    script.src = browser.runtime.getURL(file);
+    return new Promise((resolve) => {
+        script.onload = function() {
+            this.remove();
+            resolve();
+        };
+        (document.head || document.documentElement).appendChild(script);
+    });
 }
