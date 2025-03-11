@@ -7,23 +7,19 @@ const ext101WeiqiLocalizers = {
             '由于错题详细统计和错题重做功能消耗系统资源较多，需要' : 'Because detailed mistake statistics consumes a lot of resources, it is necessary to',
             '设置每道题目的做题次数，达到这个次数没有做对则判错' : 'Set the number of attempts for each problem. If this number is reached, it will be judged wrong.',
             '约定时间的对局，在对局开始前没有响应则自动关闭。' : 'The game at the appointed time will be automatically closed if there is no response before the game starts.',
-            '每道题目的做题次数，达到这个次数没有做对则判错' : 'The number of attempts for each problem. If this number is reached, it will be judged wrong.',
             '打开题目，思考一段时间才能落子（只对会员有效）' : 'You can think for a while before deciding (only possible for members)',
             '购买一年以上会员，将获得自己的专属推荐码。' : 'If you purchase a membership for more than one year, you will get your own exclusive referral code.',
             '一次生成的题目数量，最多不超过50道。' : 'You cannot generate more than 50 problems at once.',
             '进入作业模板，可以手工生成一份新作业' : 'Enter the job template to manually generate a new job',
             '此邮箱将接受激活邮件完成账号激活流程' : 'This email address will receive an activation email to complete the account activation process',
             '会员卡/围豆为虚拟产品，不支持退款。' : 'Membership cards/weidou are virtual products and cannot be refunded.',
-            '不选择，则依靠棋友当前级别自动筛选' : 'If you don’t choose, it will be automatically selected based on the current player level',
             '你的用户名和密码不符，请再试一次' : 'Your username and password do not match; please try again',
             '请在图中三角标位置选择最佳着手' : 'Please choose the best triangled move',
             '由于资源所限，错题本容量限制为' : 'Due to resource constraints, the capacity of the error book is limited to',
-            '如果超过时间未做完，则本题判错' : 'If the time is exceeded, the problem will be judged wrong.',
             '请在棋盘上标出双方所有的死子' : 'Please mark all dead stones on the board',
             '本题为选择题，请选择一个选项' : 'This question is multiple choice, please select one option',
             '基礎から始める 河野臨の詰碁' : 'Kono Rin’s tsumego starting from the basics',
             '挂上免战牌,不接受对弈邀请' : 'reject challenge invitations',
-            '单位为天，每多少天一次作业' : 'How often to run the job, in days',
             '刚注册的棋友都属于普通会员' : 'Newly registered Go players are all ordinary members',
             '101围棋网有三种会员类型' : '101 Weiqi.com has three membership types',
             '请直接用鼠标在棋盘上落子' : 'Use the mouse to play stones',
@@ -39,7 +35,6 @@ const ext101WeiqiLocalizers = {
             '只有一次提交解答的机会' : 'Only one opportunity to submit answer',
             '只有2次提交解答的机会' : 'Only two opportunities to submit answers',
             '创建一个围棋教室/棋社' : 'Create a Go classroom/club',
-            '不选择，则混合各种题型' : 'If you don’t choose, problem categories will be mixed',
             '101本月错题统计分析' : 'Community error report this month',
             '101年度错题统计分析' : 'Community mistakes report',
             '落子确认关闭中，开启' : 'Toggle move confirmation',
@@ -67,7 +62,6 @@ const ext101WeiqiLocalizers = {
             '还没有101帐号' : 'Don’t have a 101 account yet',
             '设置比赛计时范围' : 'Set the game time range',
             '級位練習600題' : 'Kyu-level Practice 600 Problems',
-            '系统自动生成作业' : 'The system automatically generates homework',
             '生成作业打印页面' : 'Generate print page',
             '次提交解答的机会' : 'opportunities to submit answers',
             '我的作业模板列表' : 'My job template list',
@@ -96,7 +90,6 @@ const ext101WeiqiLocalizers = {
             '尚未完成的作业' : 'Unfinished homework',
             '围棋知识点专辑' : 'Categories list',
             '参与的话题列表' : 'participated topic list',
-            '创建新作业模板' : 'Create a new job template',
             '出奇制胜的妙手' : 'Surprising winning brilliancies',
             '从错题本中删除' : 'Remove from mistakes book',
             '不接受对弈邀请' : 'Do not accept game requests',
@@ -368,7 +361,6 @@ const ext101WeiqiLocalizers = {
             '日韩规则' : 'Japanese/Korean rules',
             '日本棋手' : 'Japanese players',
             '日本古典' : 'Japanese classic',
-            '无需等待' : 'No need to wait',
             '旋转棋盘' : 'Rotate board',
             '收藏此题' : 'Bookmark problem',
             '提交答案' : 'Submit answer',
@@ -380,7 +372,6 @@ const ext101WeiqiLocalizers = {
             '我的首页' : 'Home',
             '我生成的' : 'My generated',
             '成长足迹' : 'Growth Footprint',
-            '思考时间' : 'Thinking time',
             '忘记密码' : 'Forgot password',
             '微信登录' : 'WeChat login',
             '微信扫码' : 'WeChat scan code',
@@ -438,7 +429,6 @@ const ext101WeiqiLocalizers = {
             '变化答案' : 'Variation answers',
             '取消收藏' : 'Remove bookmark',
             '发出请求' : 'Make request',
-            '北京时间' : 'Beijing time',
             '加藤正夫' : 'Kato Masao',
             '加田克司' : 'Kada Katsuji',
             '加入时间' : 'join time',
@@ -456,14 +446,12 @@ const ext101WeiqiLocalizers = {
             '做题记录' : 'Question record',
             '做题等级' : 'Problem grade',
             '做题次序' : 'Problem order',
-            '做题机会' : 'Problem solving opportunities',
             '做题时间' : 'Question time',
             '做题数据' : 'Problem statistics',
             '修改类型' : 'Modification type',
             '依田纪基' : 'Yoda Norimoto',
             '作业难度' : 'Difficulty',
             '作业状态' : 'State',
-            '作业模板' : 'Job template',
             '作业日期' : 'Job date',
             '作业列表' : 'Job list',
             '低中國流' : 'low Chinese opening',
@@ -1961,47 +1949,43 @@ const ext101WeiqiLocalizers = {
             },
             {
                 regExp: /第\s*(\d+)\s*部分/,
-                replace: () => (match, number) => `Part ${number}`
+                replace: (match, number) => `Part ${number}`
             },
             {
                 regExp: /第\s*(\d+)\s*轮/,
-                replace: () => (match, number) => `Round ${number}`
+                replace: (match, number) => `Round ${number}`
             },
             {
                 regExp: /(20\d\d)年(\d\d?)月(\d\d?)日/,
-                replace: () => (match, year, month, day) => [ year, month, day ].join('.')
+                replace: (match, year, month, day) => [ year, month, day ].join('.')
             },
             {
                 regExp: /共\s*(\d+)\s*道题目/,
-                replace: () => (match, number) => `${number} questions in total`
-            },
-            {
-                regExp: /限制(\d+)分钟/,
-                replace: () => (match, limit) => `${limit} min limit`
+                replace: (match, number) => `${number} questions in total`
             },
             {
                 regExp: /为(\d+)次/,
-                replace: () => (match, times) => `${times} times`
+                replace: (match, times) => `${times} times`
             },
             {
                 regExp: /共计(\d+)次/,
-                replace: () => (match, times) => `${times} times in total`
+                replace: (match, times) => `${times} times in total`
             },
             {
                 regExp: /错题平均花费时间为(\d+)秒/,
-                replace: () => (match, number) => `average ${number} sec on wrong questions`
+                replace: (match, number) => `average ${number} sec on wrong questions`
             },
             {
                 regExp: /在(\d+)道题目中出错/,
-                replace: () => (match, number) => `${number} mistakes`  // literally: 'made mistakes in ${number} questions'
+                replace: (match, number) => `${number} mistakes`  // literally: 'made mistakes in ${number} questions'
             },
             {
                 regExp: /每(\d+)天一次/,
-                replace: () => (match, n) => `Every ${n} days`
+                replace: (match, n) => `Every ${n} days`
             },
             {
                 regExp: /第(\d+)章/,
-                replace: () => `Chapter ${n}`
+                replace: (match, n) => `Chapter ${n}`
             },
         ],
         images: [
@@ -2023,15 +2007,57 @@ const ext101WeiqiLocalizers = {
     },
     '/guan': {
         texts: {
-          '棋 力 测 试' : 'Strength Test',
-          '显示我的记录' : 'My statistics',
-          '通过率' : 'Pass rate',
-          '最高' : 'Best'
+            '棋 力 测 试' : 'Strength Test',
+            '显示我的记录' : 'My statistics',
+            '通过率' : 'Pass rate',
+            '最高' : 'Best'
         },
         regExps: [],
         images: [
-          'guan2/training2.png',
-          'guan2/tt2.png',
+            'guan2/training2.png',
+            'guan2/tt2.png',
         ]
+    },
+    '/task/createbook': {
+        texts: {
+            '每个题型的题目数量不能超过20题,难度不选择则使用棋友当前的水平': 'It cannot exceed 20. If the difficulty is not selected, the current level of the player will be used.',
+            '打开题目，思考一段时间才能落子（本功能仅对作业卡以上会员开放）': 'Open the problem and think for a while before making a move (this function is only available to members)',
+            '设置每道题目的做题时间，如果超过时间未做完，则本题判错' : "Time limit for each problem. If you fail to finish the problem within this time, it's considered wrong.",
+            '每道题目的做题次数，达到这个次数没有做对则判错' : 'The number of attempts for each problem. If this number is reached, it will be judged wrong.',
+            '会员可以选择精品题库，非会员只能选择公开题库': 'Members can choose the premium problems bank, non-members can only choose the public problems bank',
+            '精品题库，10万题，人工筛选，逐题审核，质量保证': 'High-quality problems, 100K, human screening, thorough review',
+            '公开题库，包含101围棋所有入库题目，未经筛选': 'Public problems bank, including all the problems in 101 Go, no screening',
+            '不选择，则依靠棋友当前级别自动筛选' : 'If you don’t choose, it will be automatically selected based on the current player level',
+            '如果超过时间未做完，则本题判错' : 'If the time is exceeded, the problem will be judged wrong.',
+            '单位为天，每多少天一次作业' : 'How often to run the job, in days',
+            '不选择，则混合各种题型' : 'If you don’t choose, problem categories will be mixed',
+            '系统自动生成作业' : 'The system automatically generates homework',
+            '创建新的作业模板' : 'Create a new job template',
+            '创建新作业模板' : 'Create a new job template',
+            '作业生成时间' : 'Generation time',
+            '做题时间设置' : 'Problem time limit',
+            '不限制时间' : 'No time limit',
+            '思考时间' : 'Thinking time',
+            '做题机会' : 'Problem solving attempts',
+            '无需等待' : 'No need to wait',
+            '题库来源' : 'Problem bank source',
+            '作业模板' : 'Job template',
+            '北京时间' : 'Beijing time',
+            '组合题型' : 'Combined problems',
+            '1次机会' : '1 attempt',
+            '2次机会' : '2 attempts',
+            '时' : 'hour'
+        },
+        regExps: [
+            {
+                regExp: /限制(\d+)分钟/,
+                replace: (match, limit) => `${limit} min limit`
+            },
+            {
+                regExp: /限制(\d+)秒/,
+                replace: (match, limit) => `${limit} sec limit`
+            },
+        ],
+        images: []
     }
 };
